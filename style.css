@@ -63,7 +63,8 @@ main > * {
 }
 
 .airplane-card img {
-  max-width: calc(100% - .1rem);
+  max-width: calc(100% - .1rem); 
+  /* max-width: 100%; */
   display: block;
   margin-bottom: .5rem;
 }
@@ -71,3 +72,19 @@ main > * {
 /* media queries */
 
 /* YOUR CODE HERE */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .airplane-list-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .airplane-card {
+    width: 100%;
+  }
+  main > * {
+    margin: 0rem;
+  }
+}
